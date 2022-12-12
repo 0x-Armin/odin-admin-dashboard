@@ -35,13 +35,14 @@
 }
 
 .container div {
-  padding: 8px;
-
   font-family: "eb_garamondregular", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
 
+/* All stylings for the sidebar */
 .sidebar {
+  padding: 12px;
+
   grid-column: 1 / 2;
 
   display: grid;
@@ -74,4 +75,53 @@
 .nav-misc ul li {
   justify-self: start;
   align-self: center;
+}
+
+/* All stylings for the main body */
+.main-body {
+  grid-column: 2 / 3;
+
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+/* Styling for header */
+.header {
+  padding: 18px;
+  padding-left: 28px;
+  background-color: white;
+
+  grid-template-rows: 1fr 2fr;
+
+  display: grid;
+}
+
+.header-top {
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr 2fr;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin: 0 6px;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 6px 0;
+  border: 0;
+  border-radius: 14px;
+  background-color: #E8E8E8;
+  width: 80%;
+}
+
+.notifs {
+  display: flex;
+  align-items: center;
 }
