@@ -100,9 +100,10 @@
   grid-row: 1 / 2;
 
   display: grid;
-  grid-template-columns: 7fr 1fr 1fr 2fr;
+  grid-template-columns: 8fr 3fr;
 }
 
+/* Styling for search input field */
 .search-div {
   display: flex;
   align-items: center;
@@ -118,10 +119,36 @@ input[type=text] {
   border: 0;
   border-radius: 14px;
   background-color: #E8E8E8;
-  width: 80%;
+  width: 70%;
+}
+
+.header-top-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
 }
 
 .notifs {
   display: flex;
   align-items: center;
+
+  justify-self: center;
+}
+
+/* Styling for profile pictures */
+.profile-pic-container {
+  background-image: url("img/armin-arlelt-1.jpg");
+  background-size: 60px;
+  background-position: 55% 0%;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+
+  justify-self: center;
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
 }
