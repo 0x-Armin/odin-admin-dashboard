@@ -135,7 +135,7 @@ input[type=text] {
 }
 
 /* Styling for profile pictures */
-.profile-pic-container {
+.small-profile-pic-container {
   background-image: url("img/armin-arlelt-1.jpg");
   background-size: 60px;
   background-position: 55% 0%;
@@ -151,4 +151,61 @@ input[type=text] {
   align-items: center;
 
   font-weight: bold;
+}
+
+/* Header bottom */
+.header-bottom {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.header-bottom-left {
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.big-profile-pic-container {
+  background-image: url("img/armin-arlelt-1.jpg");
+  background-size: 90px;
+  background-position: 55% 0%;
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+
+  justify-self: center;
+}
+
+.header-greeting-text {
+  align-self: center;
+}
+
+div .header-hi-there-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div .header-name-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-bottom-right {
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-btn {
+  align-self: center;
+  height: 30px;
+  width: 90px;
+
+  border-radius: 16px;
+  border-style: none;
+
+  background-color: #4D5061;
+  color: white;
 }
