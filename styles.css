@@ -252,7 +252,7 @@ div .header-name-text {
   padding: 12px;
 
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-               rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
@@ -280,6 +280,8 @@ div .header-name-text {
 
 /* Main body right, including announcements and trending */
 .main-body-right {
+  height: 72vh;
+  overflow: auto;
   grid-column: 2 / 3;
 
   display: grid;
@@ -300,9 +302,7 @@ div .header-name-text {
 
 .announcement-card {
   padding: 12px;
-  
 }
-
 
 .announcement-card .title {
   font-size: 18px;
@@ -312,4 +312,54 @@ div .header-name-text {
 .announcement-card p {
   font-size: 16px;
   font-weight: normal;
+}
+
+/* Trending */
+.trending-list {
+  height: 80%;
+  margin-top: 8px;
+  background-color: white;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow: auto;
+}
+
+.trending-profile {
+  padding: 12px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.trending-profile .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.trending-profile p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.erwin-profile-pic-container {
+  background-image: url("img/erwin_smith.jpg");
+  background-size: 52px;
+  background-position: 50% 0%;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+
+  justify-self: center;
+}
+
+.mikasa-profile-pic-container {
+  background-image: url("img/mikasa_ackerman.jpg");
+  background-size: 52px;
+  background-position: 50% 0%;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+
+  justify-self: center;
 }
