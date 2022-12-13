@@ -277,3 +277,39 @@ div .header-name-text {
   grid-template-columns: 1fr 1fr;
   gap: 4px;
 }
+
+/* Main body right, including announcements and trending */
+.main-body-right {
+  grid-column: 2 / 3;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  margin: 12px;
+  font-weight: 600;
+}
+
+.announcements-list {
+  height: 80%;
+  margin-top: 8px;
+  background-color: white;
+
+  overflow: auto;
+  display: grid;
+}
+
+.announcement-card {
+  padding: 12px;
+  
+}
+
+
+.announcement-card .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.announcement-card p {
+  font-size: 16px;
+  font-weight: normal;
+}
